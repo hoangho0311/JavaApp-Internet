@@ -1,0 +1,74 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"maximumSize": new java.awt.Dimension( 740, 570 )
+			"preferredSize": new java.awt.Dimension( 740, 570 )
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtMessage"
+				"background": new java.awt.Color( 255, 255, 51, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 425
+				"width": 540
+				"height": 85
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSendMessage"
+				"text": "Send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSendMessage", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 545
+				"y": 430
+				"width": 100
+				"height": 65
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "BTChoosefile"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/KTCK/img/filechoose.png" )
+				"contentAreaFilled": false
+				"borderPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "BTChoosefile", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 655
+				"y": 430
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "BTSendFile"
+				"text": "Send File"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "BTSendFile", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 655
+				"y": 465
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"background": new java.awt.Color( 51, 255, 204, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 740
+				"height": 55
+				"x": 0
+				"y": 345
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtMessages"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 740
+				"height": 365
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 740, 550 )
+		} )
+	}
+}
